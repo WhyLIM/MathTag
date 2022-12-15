@@ -117,8 +117,8 @@ function activate(context) {
                     }
                 }
             }
-        }
-    }
+        })
+    })
 }                
 
 // This method is called when your extension is deactivated
