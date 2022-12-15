@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # mathtag README
 
 This is the README for your extension "mathtag". After writing up a brief description, we recommend including the following sections.
@@ -63,3 +64,7 @@ You can author your README using Visual Studio Code.  Here are some useful edito
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
+=======
+# MathTag
+A plugin for automatic numbering of mathematical formulas in markdown.
+>>>>>>> fc18e02b9a69208ef7d82fc06f0fe0382a557351
