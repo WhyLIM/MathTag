@@ -24,13 +24,13 @@
         "keybindings": [
             {
                 "command": "mathTag.addMathTagNumbers",
-                "key": "ctrl+shift+a"
+                "key": "ctrl+shift+m a"
             },
             {
                 "command": "mathTag.clearMathTagNumbers",
-                "key": "ctrl+shift+c"
+                "key": "ctrl+shift+m c"
             }
-        ]
+        ],
         "menus": {
             "editor/context": [
                 {
