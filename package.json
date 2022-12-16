@@ -13,53 +13,49 @@
     "contributes": {
         "commands": [
             {
-                "command": "mathTag.addMathTagNumbers",
-                "title": "Add MathTag Numbers"
+                "command": "mathTag.addNumbers",
+                "title": "Add MathTag Numbers",
+                "key": "ctrl+shift+a a"
             },
             {
-                "command": "mathTag.clearMathTagNumbers",
-                "title": "Clear MathTag Numbers"
-            }
-        ],
-        "keybindings": [
-            {
-                "command": "mathTag.addMathTagNumbers",
-                "key": "ctrl+shift+m a"
-            },
-            {
-                "command": "mathTag.clearMathTagNumbers",
-                "key": "ctrl+shift+m c"
+                "command": "mathTag.removeNumbers",
+                "title": "Remove MathTag Numbers",
+                "key": "ctrl+shift+a c"
             }
         ],
         "menus": {
             "editor/context": [
                 {
-                    "command": "mathTag.addMathTagNumbers",
-                    "group": "editing",
-                    "when": "editorFocus"
+                    "command": "mathTag.addNumbers",
+                    "group": "mathtag"
                 },
                 {
-                    "command": "mathTag.clearMathTagNumbers",
-                    "group": "editing",
-                    "when": "editorFocus"
+                    "command": "mathTag.removeNumbers",
+                    "group": "mathtag"
                 }
             ]
         }
     },
+    "activationEvents": [
+        "onLanguage:markdown"
+    ],
     "scripts": {
         "lint": "eslint .",
         "pretest": "npm run lint",
         "test": "node ./test/runTest.js"
     },
     "devDependencies": {
-        "@types/vscode": "^1.74.0",
         "@types/glob": "^8.0.0",
         "@types/mocha": "^10.0.0",
         "@types/node": "16.x",
+        "@types/vscode": "^1.74.0",
+        "@vscode/test-electron": "^2.1.5",
         "eslint": "^8.24.0",
         "glob": "^8.0.3",
         "mocha": "^10.0.0",
-        "typescript": "^4.8.4",
-        "@vscode/test-electron": "^2.1.5"
+        "typescript": "^4.8.4"
+    },
+    "dependencies": {
+        "katex": "^0.16.4"
     }
 }
